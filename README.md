@@ -1184,11 +1184,11 @@ Parameter | Description |
 `sslshared` | Enable Shared SSL for your zone, so you can use HTTPS, using our SSL certificate for netdna-ssl.com |
 `suspend` | Flag denoting if the zone has been suspended |
 `locked` | Flag denoting if the zone has been locked |
-`geo_enabled` | Read-only flag denoting if the zone has 'More Locations' enabled |
 `ssl` | Read-only flag denoting if the zone has Dedicated IP SSL enabled |
 `ssl_sni` | Read-only flag denoting if the zone has SNI SSL enabled |
 `inactive` | Flag denoting if the zone has been deleted |
 `creation_date` | Date Created |
+`geo_enabled` | Read-only flag denoting if the zone has 'More Locations' enabled |
 `spdy` | Flag denoting if the zone has the SPDY protocol enabled |
 
 ### Code Samples
@@ -1250,6 +1250,9 @@ api.get('/zones/pull.json', function(err, response) {
                 "ip": "205.134.255.49",
                 "label": "personal",
                 "locked": "0",
+                "ssl": "1",
+                "ssl_sni": "0",
+                "geo_enabled": "0",
                 "name": "somedomain",
                 "port": "80",
                 "proxy_cache_lock": "0",
@@ -1288,6 +1291,9 @@ api.get('/zones/pull.json', function(err, response) {
                 "ip": "205.134.255.49",
                 "label": null,
                 "locked": "0",
+                "ssl": "0",
+                "ssl_sni": "1",
+                "geo_enabled": "1",
                 "name": "newpullzone3",
                 "port": "80",
                 "proxy_cache_lock": "0",
