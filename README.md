@@ -39,6 +39,7 @@
 
 
 ## Changelog
+  - **2015-02-17**  Added information for new read-only Zone API flags
   - **2015-01-19**  Added account-level SSL
   - **2014-12-18**  Removed Live Zone API documentation (EOL)
   - **2014-12-09**  Added new <a href="#origin-shield-api">Origin Shield API</a> documentation
@@ -1183,6 +1184,9 @@ Parameter | Description |
 `sslshared` | Enable Shared SSL for your zone, so you can use HTTPS, using our SSL certificate for netdna-ssl.com |
 `suspend` | Flag denoting if the zone has been suspended |
 `locked` | Flag denoting if the zone has been locked |
+`geo_enabled` | Read-only flag denoting if the zone has 'More Locations' enabled |
+`ssl` | Read-only flag denoting if the zone has Dedicated IP SSL enabled |
+`ssl_sni` | Read-only flag denoting if the zone has SNI SSL enabled |
 `inactive` | Flag denoting if the zone has been deleted |
 `creation_date` | Date Created |
 `spdy` | Flag denoting if the zone has the SPDY protocol enabled |
